@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript objects</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    var shoes = [{
+            name: 'Nike_Air',
+            price: 'R1800',
+            sizes: [6, 7, 8, 9, 10],
+            colours: ['black', 'white', 'blue', 'pink', 'orange']
+        },
+        {
+            name: 'Adidas_Boost',
+            price: 'R1500',
+            sizes: [6, 7, 8, 9, 10],
+            colours: ['yellow', 'green', 'gold', 'pink', 'brown']
+        },
+        {
+            name: 'Vans',
+            price: 'R1000',
+            sizes: [3, 4, 5, 6, 7, 8, 9, 10],
+            colours: ['brown', 'black', 'white']
+        },
+        {
+            name: 'Puma',
+            price: 'R1400',
+            sizes: [ 4, 5, 6, 7, 8, 9, 10,11,12],
+            colours: ['purple', 'green', 'yellow','blue']
+        }
+    ];
+    shoes.forEach(function (shoe,shoe_index){
+        document.write(shoe.name)
+        document.write('<br/>');
+
+        if (shoe.name == 'Vans') {
+            document.write('choose a colour for Mandisa');
+        }
+        else if (shoe.name == 'Puma'){
+            document.write('choose a colour for Manu');
+        }
+        else {
+            document.write('choose a colour for myself');
+        };
+        document.write('<br/>');
+
+
+
+        shoe.colours.forEach(function (colour,colour_index) {
+            document.write(colour);
+            document.write('<br/>');
+
+
+        })
+
+    } );
+
+
+
+
+</script>
